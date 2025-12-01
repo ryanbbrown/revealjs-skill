@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Presentation outputs and experiments
+presentation-v*/
+markdown_pages/
+screenshots/
+
+# Misc content files
+game-slide-content.md

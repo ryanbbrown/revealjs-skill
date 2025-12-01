@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Showcase</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1: Title -->
+      <section id="title" class="section-divider">
+        <h1>Theme Showcase</h1>
+        <div class="content">
+          <p>A tour of all available components and layouts</p>
+        </div>
+      </section>
+
+      <!-- Slide 2: Basic Lists -->
+      <section id="basic-lists">
+        <h2>Basic Lists</h2>
+        <div class="content">
+          <p>Standard bullet points work just like you'd expect:</p>
+          <ul>
+            <li>First item in the list</li>
+            <li>Second item with more detail</li>
+            <li>Third item to round things out</li>
+          </ul>
+          <p class="text-muted" style="margin-top: 20px;">Use <code>.text-muted</code> for secondary text like this.</p>
+        </div>
+        <div class="footnote">Footnotes appear below the bottom line</div>
+      </section>
+
+      <!-- Slide 3: Two Columns -->
+      <section id="two-columns">
+        <h2>Two-Column Layout</h2>
+        <div class="content">
+          <div class="columns">
+            <div>
+              <h3><i class="fa-solid fa-rocket"></i> Column One</h3>
+              <p>Use the <code>.columns</code> class to create side-by-side layouts. Each child gets equal width automatically.</p>
+            </div>
+            <div>
+              <h3><i class="fa-solid fa-gears"></i> Column Two</h3>
+              <p>Perfect for comparisons, before/after, or presenting two related ideas together.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: Three Columns -->
+      <section id="three-columns">
+        <h2>Three-Column Layout</h2>
+        <div class="content">
+          <div class="columns">
+            <div class="box">
+              <h3>Box A</h3>
+              <p>Filled boxes have a subtle background.</p>
+            </div>
+            <div class="box">
+              <h3>Box B</h3>
+              <p>Great for feature comparisons.</p>
+            </div>
+            <div class="box">
+              <h3>Box C</h3>
+              <p>Or product tiers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 5: Box Variants -->
+      <section id="box-variants">
+        <h2>Box Variants</h2>
+        <div class="content">
+          <div class="columns">
+            <div class="box">
+              <h3>.box</h3>
+              <p>Filled background with border</p>
+            </div>
+            <div class="box-outlined">
+              <h3>.box-outlined</h3>
+              <p>Border only, no fill</p>
+            </div>
+          </div>
+          <div class="columns" style="margin-top: 20px;">
+            <div class="box-header">
+              <h3>.box-header</h3>
+              <p>Header is boxed, content flows below</p>
+            </div>
+            <div class="box-header-outlined">
+              <h3>.box-header-outlined</h3>
+              <p>Header boxed, everything outlined</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6: Section Divider -->
+      <section id="callouts-section" class="section-divider">
+        <h1>Callouts</h1>
+        <div class="content">
+          <p>Highlight important information</p>
+        </div>
+      </section>
+
+      <!-- Slide 7: Callout Colors -->
+      <section id="callout-colors">
+        <h2>Callout Colors</h2>
+        <div class="content">
+          <div class="callout callout-note">
+            <strong>Note:</strong> Use <code>.callout-note</code> for informational messages.
+          </div>
+          <div class="callout callout-warning">
+            <strong>Warning:</strong> Use <code>.callout-warning</code> for cautions.
+          </div>
+          <div class="callout callout-tip">
+            <strong>Tip:</strong> Use <code>.callout-tip</code> for helpful suggestions.
+          </div>
+          <div class="callout callout-neutral">
+            <strong>Note:</strong> Use <code>.callout-neutral</code> for general callouts.
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: Callout Variants -->
+      <section id="callout-variants">
+        <h2>Callout Border Styles</h2>
+        <div class="content">
+          <div class="columns">
+            <div>
+              <p class="text-muted text-center">Left border (default)</p>
+              <div class="callout callout-note">
+                Standard callout with left accent border.
+              </div>
+            </div>
+            <div>
+              <p class="text-muted text-center">Left + bordered</p>
+              <div class="callout callout-note callout-bordered">
+                Add <code>.callout-bordered</code> for full border.
+              </div>
+            </div>
+          </div>
+          <div class="columns" style="margin-top: 20px;">
+            <div>
+              <p class="text-muted text-center">Top border</p>
+              <div class="callout callout-warning callout-top">
+                Use <code>.callout-top</code> for top accent.
+              </div>
+            </div>
+            <div>
+              <p class="text-muted text-center">Top + bordered</p>
+              <div class="callout callout-warning callout-top-bordered">
+                Combine with <code>.callout-top-bordered</code>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 9: Icon Callouts -->
+      <section id="icon-callouts">
+        <h2>Icon Callouts</h2>
+        <div class="content">
+          <div class="columns">
+            <div class="callout callout-note callout-top-icon">
+              <span class="callout-icon"><i class="fa-solid fa-info"></i></span>
+              <p class="text-center">Add a centered icon circle with <code>.callout-top-icon</code></p>
+            </div>
+            <div class="callout callout-tip callout-top-icon">
+              <span class="callout-icon"><i class="fa-solid fa-lightbulb"></i></span>
+              <p class="text-center">Works with any callout color variant</p>
+            </div>
+            <div class="callout callout-warning callout-top-icon">
+              <span class="callout-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+              <p class="text-center">Use Font Awesome icons inside</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 10: Blockquotes -->
+      <section id="blockquotes">
+        <h2>Blockquotes</h2>
+        <div class="content">
+          <blockquote>
+            The best way to predict the future is to invent it.
+            <cite>— Alan Kay</cite>
+          </blockquote>
+          <p>Blockquotes are styled with a left border and italic text. Add a <code>&lt;cite&gt;</code> for attribution.</p>
+        </div>
+      </section>
+
+      <!-- Slide 11: Text Utilities -->
+      <section id="text-utilities">
+        <h2>Text Utilities</h2>
+        <div class="content">
+          <p>Default paragraph text size (0.7em)</p>
+          <p class="text-lg">.text-lg makes text larger (1em)</p>
+          <p class="text-xl">.text-xl is extra large (1.3em)</p>
+          <p class="text-2xl">.text-2xl is double extra large (1.6em)</p>
+          <p class="text-muted">.text-muted grays out secondary text</p>
+          <p class="text-center">.text-center centers the text</p>
+        </div>
+      </section>
+
+      <!-- Slide 12: Fragments -->
+      <section id="fragments">
+        <h2>Progressive Reveal (Fragments)</h2>
+        <div class="content">
+          <p>Click to reveal each item:</p>
+          <ul>
+            <li class="fragment">First point appears</li>
+            <li class="fragment">Then the second</li>
+            <li class="fragment">And finally the third</li>
+          </ul>
+          <p class="fragment fade-up" style="margin-top: 20px;">
+            <i class="fa-solid fa-arrow-up"></i> This one slides up with <code>.fragment.fade-up</code>
+          </p>
+        </div>
+      </section>
+
+      <!-- Slide 13: Icons -->
+      <section id="icons">
+        <h2>Font Awesome Icons</h2>
+        <div class="content">
+          <p class="text-lg">Use icons to add visual interest:</p>
+          <div class="columns" style="margin-top: 20px;">
+            <div class="box text-center">
+              <p><i class="fa-solid fa-chart-line fa-2x"></i></p>
+              <p>fa-chart-line</p>
+            </div>
+            <div class="box text-center">
+              <p><i class="fa-solid fa-users fa-2x"></i></p>
+              <p>fa-users</p>
+            </div>
+            <div class="box text-center">
+              <p><i class="fa-solid fa-shield-halved fa-2x"></i></p>
+              <p>fa-shield-halved</p>
+            </div>
+            <div class="box text-center">
+              <p><i class="fa-solid fa-code fa-2x"></i></p>
+              <p>fa-code</p>
+            </div>
+          </div>
+          <p class="text-muted text-center" style="margin-top: 20px;">Browse all icons at fontawesome.com</p>
+        </div>
+      </section>
+
+      <!-- Slide 14: Combining Elements -->
+      <section id="combining">
+        <h2>Mixing Components</h2>
+        <div class="content">
+          <div class="columns">
+            <div>
+              <div class="box-header-outlined">
+                <h3><i class="fa-solid fa-check-circle"></i> Do This</h3>
+                <ul>
+                  <li>Mix layouts and containers</li>
+                  <li>Vary visual presentation</li>
+                  <li>Use icons for visual interest</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="box-header-outlined">
+                <h3><i class="fa-solid fa-times-circle"></i> Avoid This</h3>
+                <ul>
+                  <li>Same layout every slide</li>
+                  <li>Walls of text</li>
+                  <li>Missing visual hierarchy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="callout callout-tip" style="margin-top: 20px;">
+            <strong>Pro tip:</strong> Keep slides scannable with short bullet points and one main idea per slide.
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 15: Closing -->
+      <section id="closing" class="section-divider">
+        <h1>That's the Tour!</h1>
+        <div class="content">
+          <p>Now go build something great</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      slideNumber: true,
+      hash: true,
+      transition: 'slide',
+      center: false
+    });
+  </script>
+</body>
+</html>
