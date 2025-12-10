@@ -78,7 +78,7 @@ function generateSlides(structure) {
     if (item === 'd') {
       // Section divider
       slides += `
-      <section id="divider-${dividerCount}" class="section-divider">
+      <section id="divider-${dividerCount}" class="section-divider" data-state="is-section-divider">
         <h1>Section ${dividerCount} Title</h1>
       </section>
 `;
@@ -88,7 +88,7 @@ function generateSlides(structure) {
       // Single horizontal slide
       if (hIndex === 1) {
         slides += `
-      <section id="title" class="section-divider">
+      <section id="title" class="section-divider" data-state="is-section-divider">
         <h1>Presentation Title</h1>
       </section>
 `;
@@ -156,18 +156,20 @@ ${slidesContent}
     Reveal.initialize({
       width: 1280,
       height: 720,
+      margin: 0,
       controls: true,
       progress: true,
-      slideNumber: true,
+      slideNumber: false,
       hash: true,
       transition: 'slide',
       center: false,
       plugins: [ RevealChart ],
       chart: {
-        defaults: {
+        defaults: Object.assign({
           color: 'rgba(0, 0, 0, 0.8)',
-          borderColor: 'rgba(0, 0, 0, 0.8)'
-        }
+          borderColor: 'rgba(0, 0, 0, 0.8)',
+          devicePixelRatio: 2
+        }, window.location.search.includes('export') ? { animation: false } : {})
       }
     });
   </script>

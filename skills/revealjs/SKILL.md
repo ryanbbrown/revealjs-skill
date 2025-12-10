@@ -273,10 +273,12 @@ Capture screenshots of all slides:
 
 ```bash
 cd <presentation-directory>
-npx decktape reveal presentation.html output.pdf \
+npx decktape reveal "presentation.html?export" output.pdf \
   --screenshots \
   --screenshots-directory "screenshots/$(date +%Y%m%d_%H%M%S)"
 ```
+
+**Note:** The `?export` query parameter disables chart animations for cleaner PDF rendering. Charts will still animate when viewing the HTML directly in a browser.
 
 This creates a timestamped folder (e.g., `screenshots/20241210_143052/`) so you can track versions and compare before/after fixes.
 
@@ -310,7 +312,7 @@ The overflow script catches most layout issues, but these problems require visua
 
 **Re-capture specific slides after fixes:**
 ```bash
-npx decktape reveal presentation.html output.pdf \
+npx decktape reveal "presentation.html?export" output.pdf \
   --screenshots \
   --screenshots-directory "screenshots/$(date +%Y%m%d_%H%M%S)" \
   --slides 2,5,7-9

@@ -13,11 +13,12 @@
    =========================================== */
 :root {
   /* ===========================================
-     BACKGROUND COLOR - Set this first!
-     For dark presentations, change to a dark color (e.g., #1a1a2e, #0d1117, #2d2d2d)
+     BACKGROUND COLORS
+     For dark presentations, change to dark colors (e.g., #1a1a2e, #0d1117)
      Then update --text-color and --muted-color to light colors below.
      =========================================== */
-  --background-color: #ffffff;
+  --background-color: #ffffff;              /* Main slide background */
+  --section-divider-bg: #ffffff;            /* Section divider background (set different for contrast) */
 
   /* Typography - ALWAYS use pt for font sizes */
   --heading-font: "Source Sans Pro", Helvetica, sans-serif;
@@ -74,10 +75,14 @@
   font-size: var(--base-font-size);
 }
 
-/* Apply background color */
-.reveal,
-.reveal .slide-background {
-  background: var(--background-color);
+/* Apply background colors */
+.reveal-viewport {
+  background-color: var(--background-color);
+}
+
+/* Section divider background via data-state */
+.reveal-viewport.is-section-divider .slide-background.present {
+  background-color: var(--section-divider-bg) !important;
 }
 
 .reveal h1,

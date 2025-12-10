@@ -6,11 +6,19 @@
     "type": "git",
     "url": "git+https://github.com/ryanbbrown/reveal-js-skill.git"
   },
-  "keywords": ["reveal", "reveal.js", "presentation", "html-presentation"],
+  "keywords": [
+    "reveal",
+    "reveal.js",
+    "presentation",
+    "html-presentation"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.1.2",
-    "decktape": "github:ryanbbrown/decktape"
+    "decktape": "github:ryanbbrown/decktape",
+    "playwright": "^1.57.0",
+    "pptxgenjs": "^4.0.1",
+    "sharp": "^0.34.5"
   }
 }
