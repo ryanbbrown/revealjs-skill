@@ -5,9 +5,11 @@
 node_modules/
 
 # Presentation outputs and experiments
-presentation-v*/
-markdown_pages/
-screenshots/
+presentations
+tmp
 
 # Misc content files
 game-slide-content.md
+
+# anthropic pptx skill for reference
+pptx/

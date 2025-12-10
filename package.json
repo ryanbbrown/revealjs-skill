@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ryanbbrown/reveal-js-skill#readme",
   "dependencies": {
+    "cheerio": "^1.1.2",
     "decktape": "github:ryanbbrown/decktape"
   }
 }

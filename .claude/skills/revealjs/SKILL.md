@@ -1,105 +1,105 @@
 ---
 name: revealjs
-description: Create polished, professional reveal.js presentations from markdown. Use when the user asks to create slides, a presentation, a deck, or a slideshow. Supports themes, multi-column layouts, callout boxes, code highlighting, animations, speaker notes, and custom styling. Generates markdown + CSS and builds with mkslides or tidy-revealjs.
+description: Create polished, professional reveal.js presentations. Use when the user asks to create slides, a presentation, a deck, or a slideshow. Supports themes, multi-column layouts, callout boxes, code highlighting, animations, speaker notes, and custom styling. Generates HTML + CSS with no build step required.
 ---
 
 # Reveal.js Presentations
 
-Create HTML presentations using reveal.js.
+Create HTML presentations using reveal.js. No build step required - just open the HTML in a browser.
 
 ## What You Create
 
 A reveal.js presentation consists of:
 
 1. **HTML file** - Contains slides and loads reveal.js from CDN
-2. **CSS file** (optional) - Custom styles for layouts, callouts, etc.
+2. **CSS file** - Custom styles for layouts, colors, typography, and components
 
-No build step needed - just open the HTML in a browser.
+## Design Principles
 
-## Workflow
+**CRITICAL**: Before creating any presentation, analyze the content and choose appropriate design elements:
 
-### Step 1: Ask Questions
+1. **Consider the subject matter**: What is this presentation about? What tone, industry, or mood does it suggest?
+2. **Check for branding**: If the user mentions a company/organization, consider their brand colors and identity
+3. **Match palette to content**: Select colors that reflect the subject
+4. **State your approach**: Explain your design choices before writing code
 
-Before creating the presentation, ask the user:
+**Requirements**:
+- ✅ State your content-informed design approach BEFORE writing code
+- ✅ Use web-safe fonts (Arial, Helvetica, Georgia, Verdana, etc.) or Google Fonts via `@import` in CSS
+- ✅ Create clear visual hierarchy through size, weight, and color
+- ✅ Ensure readability: strong contrast, appropriately sized text, clean alignment
+- ✅ Be consistent: repeat patterns, spacing, and visual language across slides
+- ✅ **Always use `pt` (points) for font sizes** - slides are fixed-size, so `pt` is predictable and familiar (like PowerPoint/Keynote). Never use `em`, `rem`, or `px` for font sizes.
 
-**Question 1: Do you want to use the pre-built professional theme?**
+### Color Palette Selection
 
-This theme includes fixed title positioning, decorative lines, columns, boxes, callouts with icons, and other polished components.
+**Choosing colors creatively**:
+- **Think beyond defaults**: What colors genuinely match this specific topic? Avoid autopilot choices.
+- **Consider multiple angles**: Topic, industry, mood, energy level, target audience, brand identity (if mentioned)
+- **Be adventurous**: Try unexpected combinations - a healthcare presentation doesn't have to be green, finance doesn't have to be navy
+- **Build your palette**: Pick 3-5 colors that work together (dominant colors + supporting tones + accent)
+- **Ensure contrast**: Text must be clearly readable on backgrounds
 
-- **No** → Skip to Step 2, create custom CSS as needed
-- **Yes** → Ask Question 2
+**Example color palettes** (use these to spark creativity - choose one, adapt it, or create your own):
 
-**Question 2: Use the theme as-is, or customize it?**
+1. **Classic Blue**: Deep navy (#1C2833), slate gray (#2E4053), silver (#AAB7B8), off-white (#F4F6F6)
+2. **Teal & Coral**: Teal (#5EA8A7), deep teal (#277884), coral (#FE4447), white (#FFFFFF)
+3. **Bold Red**: Red (#C0392B), bright red (#E74C3C), orange (#F39C12), yellow (#F1C40F), green (#2ECC71)
+4. **Warm Blush**: Mauve (#A49393), blush (#EED6D3), rose (#E8B4B8), cream (#FAF7F2)
+5. **Burgundy Luxury**: Burgundy (#5D1D2E), crimson (#951233), rust (#C15937), gold (#997929)
+6. **Deep Purple & Emerald**: Purple (#B165FB), dark blue (#181B24), emerald (#40695B), white (#FFFFFF)
+7. **Cream & Forest Green**: Cream (#FFE1C7), forest green (#40695B), white (#FCFCFC)
+8. **Pink & Purple**: Pink (#F8275B), coral (#FF574A), rose (#FF737D), purple (#3D2F68)
+9. **Lime & Plum**: Lime (#C5DE82), plum (#7C3A5F), coral (#FD8C6E), blue-gray (#98ACB5)
+10. **Black & Gold**: Gold (#BF9A4A), black (#000000), cream (#F4F6F6)
+11. **Sage & Terracotta**: Sage (#87A96B), terracotta (#E07A5F), cream (#F4F1DE), charcoal (#2C2C2C)
+12. **Charcoal & Red**: Charcoal (#292929), red (#E33737), light gray (#CCCBCB)
+13. **Vibrant Orange**: Orange (#F96D00), light gray (#F2F2F2), charcoal (#222831)
+14. **Forest Green**: Black (#191A19), green (#4E9F3D), dark green (#1E5128), white (#FFFFFF)
+15. **Retro Rainbow**: Purple (#722880), pink (#D72D51), orange (#EB5C18), amber (#F08800), gold (#DEB600)
+16. **Vintage Earthy**: Mustard (#E3B448), sage (#CBD18F), forest green (#3A6B35), cream (#F4F1DE)
+17. **Coastal Rose**: Old rose (#AD7670), beaver (#B49886), eggshell (#F3ECDC), ash gray (#BFD5BE)
+18. **Orange & Turquoise**: Light orange (#FC993E), grayish turquoise (#667C6F), white (#FCFCFC)
 
-- **As-is** → Copy [references/styles.css](references/styles.css) and follow [references/theme-usage.md](references/theme-usage.md)
-- **Customize** → Ask about preferences:
-  - Base reveal.js theme (white, black, etc.) - note: dark themes need color adjustments
-  - Color scheme (accent colors, callout colors)
-  - With or without decorative top/bottom lines
-  - Typography preferences
-  - Then modify the CSS variables in the theme accordingly
+### Visual Design Options
 
-### Step 2: Create the Presentation
+**Geometric Patterns**:
+- Diagonal section dividers instead of horizontal
+- Asymmetric column widths (30/70, 40/60, 25/75)
+- Circular/hexagonal frames for images
+- Triangular accent shapes in corners
+- Overlapping shapes for depth
 
-Generate the HTML file with this structure:
+**Border & Frame Treatments**:
+- Thick single-color borders (10-20pt) on one side only
+- Double-line borders with contrasting colors
+- Corner brackets instead of full frames
+- L-shaped borders (top+left or bottom+right)
+- Underline accents beneath headers (3-5pt thick)
 
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Presentation Title</title>
+**Typography Treatments**:
+- Extreme size contrast (72pt headlines vs 11pt body)
+- All-caps headers with wide letter spacing
+- Numbered sections in oversized display type
+- Monospace (Courier New) for data/stats/technical content
+- Outlined text for emphasis
 
-  <!-- Reveal.js core -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+**Layout Innovations**:
+- Full-bleed images with text overlays
+- Sidebar column (20-30% width) for navigation/context
+- Modular grid systems (3×3, 4×4 blocks)
+- Z-pattern or F-pattern content flow
+- Floating text boxes over colored shapes
+- Magazine-style multi-column layouts
 
-  <!-- Base theme: white, black, dracula, moon, night, beige, serif, solarized, league, sky, simple -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+**Background Treatments**:
+- Solid color blocks occupying 40-60% of slide
+- Gradient fills (vertical or diagonal only)
+- Split backgrounds (two colors, diagonal or vertical)
+- Edge-to-edge color bands
+- Negative space as a design element
 
-  <!-- Optional: Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
-
-      <section>
-        <h1>Slide Title</h1>
-        <p>Content here</p>
-      </section>
-
-      <section>
-        <h2>Another Slide</h2>
-        <ul>
-          <li>Point one</li>
-          <li>Point two</li>
-        </ul>
-      </section>
-
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
-  <script>
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      slideNumber: true,
-      hash: true,
-      transition: 'slide',
-      center: false  // Set to false if using fixed title positioning
-    });
-  </script>
-</body>
-</html>
-```
-
-### Step 3: Design Principles
+### Slide Content Principles
 
 **Diverse presentation is key.** Even when slides have similar content types, vary the visual presentation:
 
@@ -114,129 +114,379 @@ Generate the HTML file with this structure:
 - One main idea per slide when possible
 - Use icons (Font Awesome) to add visual interest
 
-**Vary text sizes:** Use text utility classes to create visual hierarchy:
-- `.text-lg` (1em), `.text-xl` (1.3em), `.text-2xl` (1.6em) for larger text
-- `.text-muted` for secondary/grayed text
-- `.text-center` to center text
-- When a slide has less content, make it bigger - don't leave empty space with tiny text
-- Combine classes: `<p class="text-xl text-center">Big centered text</p>`
+**When a slide has less content, make it bigger** - don't leave empty space with tiny text.
 
-## Reveal.js Basics
+## Workflow
 
-### Slides
+### Step 1: Plan the Structure
 
-Each `<section>` is a slide. **Always add a unique `id` attribute** to each slide for stable identification:
+Based on the user's content, determine:
+- How many slides are needed
+- Which slides should be section dividers (centered, larger text)
+- Where to use vertical slide stacks for drill-down content
 
+### Step 2: Generate the Scaffold
+
+Use the `create-presentation.js` script to generate the HTML scaffold. Run from the repo root:
+
+```bash
+node .claude/skills/revealjs-v2/scripts/create-presentation.js --structure 1,1,d,3,1,d,1 --title "My Presentation" --output presentations/my-deck/presentation.html
+```
+
+**Options:**
+- `--slides N` - Create N horizontal slides (simple mode)
+- `--structure <list>` - Mixed layout with comma-separated values:
+  - `1` = single horizontal slide
+  - `N` (where N > 1) = vertical stack of N slides
+  - `d` = section divider slide (centered, no content wrapper)
+- `--theme <name>` - Base reveal.js theme to load from CDN (white, black, dracula, moon, night, beige, serif, solarized, league, sky, simple). Your custom CSS overrides on top of this. For dark backgrounds use `black`, `dracula`, `moon`, or `night`; for light backgrounds use `white`, `beige`, or `simple`.
+- `--output <file>` - Output filename (default: presentation.html)
+- `--title <text>` - Presentation title
+- `--styles <file>` - Custom CSS filename (default: styles.css)
+
+**Examples:**
+```bash
+# 10 horizontal slides with black theme
+node .claude/skills/revealjs-v2/scripts/create-presentation.js --slides 10 --theme black --output presentations/my-deck/presentation.html
+
+# Mixed structure: intro, 2 content slides, divider, 3-slide vertical stack, divider, closing
+node .claude/skills/revealjs-v2/scripts/create-presentation.js --structure 1,1,1,d,3,d,1 --title "Q4 Review" --output presentations/quarterly/presentation.html
+```
+
+### Step 3: Customize the CSS
+
+The scaffold script automatically copies `base-styles.css` to your presentation directory as `styles.css`. Now customize the CSS variables (especially colors) for your presentation theme.
+
+**Using Google Fonts:** Add an `@import` at the top of your CSS file:
+```css
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600&display=swap');
+
+:root {
+  --heading-font: "Playfair Display", Georgia, serif;
+  --body-font: "Lato", Helvetica, sans-serif;
+  /* ... */
+}
+```
+
+The base file includes:
+
+1. **CSS Variables** for easy customization:
+```css
+:root {
+  /* Typography - ALWAYS use pt for font sizes */
+  --heading-font: "Source Sans Pro", Helvetica, sans-serif;
+  --body-font: "Source Sans Pro", Helvetica, sans-serif;
+  --base-font-size: 32px;  /* Only px value - sets reveal.js base */
+  --text-size: 16pt;       /* Base body text - intentionally small */
+  --h1-size: 48pt;
+  --h2-size: 36pt;
+  --h3-size: 24pt;
+
+  /* Colors - customize these for each presentation */
+  --primary-color: #2196F3;
+  --secondary-color: #ff9800;
+  --text-color: #222;       /* Use light color (e.g., #FAF7F2) for dark themes */
+  --muted-color: #666;      /* Adjust for dark themes too */
+  --background-color: #ffffff;
+  --box-bg: #f5f5f5;
+  --box-border: #ddd;
+}
+```
+
+2. **Override reveal.js styles** using `.reveal` prefix:
+```css
+.reveal {
+  font-family: var(--body-font);
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: var(--heading-font);
+  text-transform: none;
+  color: var(--text-color);
+}
+
+.reveal p, .reveal li {
+  font-size: var(--text-size);
+  color: var(--text-color);
+}
+```
+
+3. **Slide layout styles** - control padding and positioning:
+```css
+.reveal .slides section {
+  padding: 40px 60px;
+  text-align: left;
+}
+```
+
+4. **Component classes** - boxes, callouts, etc. (see [CSS Components Reference](#css-components-reference))
+
+5. **Text size utilities** (use these to scale up text when slides have less content):
+```css
+/* Base text is 16pt - use these classes to increase size when needed */
+.text-lg { font-size: 18pt; }    /* Slightly larger */
+.text-xl { font-size: 20pt; }    /* Medium emphasis */
+.text-2xl { font-size: 24pt; }   /* Strong emphasis */
+.text-3xl { font-size: 28pt; }   /* Very large */
+.text-4xl { font-size: 32pt; }   /* Maximum body text */
+.text-muted { color: var(--muted-color); }
+.text-center { text-align: center; }
+```
+
+**Typography guidance:**
+- Base text (`--text-size: 16pt`) is intentionally small to fit more content
+- When a slide has less content, use `.text-lg`, `.text-xl`, etc. to fill space appropriately
+- This approach prevents overflow on content-heavy slides while allowing flexibility on lighter slides
+
+### Step 4: Fill in the HTML Content
+
+Edit the generated HTML file to add content to each slide. Follow these patterns:
+
+**Standard slide structure:**
 ```html
-<section id="intro">
-  <h2>Introduction</h2>
-  <p>Content</p>
+<section id="unique-slide-id">
+  <h2>Slide Title</h2>
+  <div class="content">
+    <!-- Content here -->
+  </div>
 </section>
-
-<section id="key-concepts">
-  <h2>Key Concepts</h2>
-  <p>More content</p>
-</section>
 ```
 
-Use descriptive, kebab-case IDs (e.g., `title`, `why-this-talk`, `case-study-1`, `conclusion`). These IDs:
-- Appear in screenshot filenames for easy identification
-- Remain stable even if slides are reordered or deleted
-- Enable direct linking to specific slides via URL hash
-
-### Vertical Slides (Drill-down)
-
-Nest sections for vertical navigation:
-
+**Multi-column layouts** - always use inline CSS grid (do NOT create utility classes like `.grid-2`):
 ```html
-<section>
-  <section><h2>Main Topic</h2></section>
-  <section><h2>Detail 1 (press down)</h2></section>
-  <section><h2>Detail 2</h2></section>
-</section>
+<!-- Equal columns -->
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+  <div>Column 1</div>
+  <div>Column 2</div>
+</div>
+
+<!-- Three columns -->
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px;">
+  <div>Column 1</div>
+  <div>Column 2</div>
+  <div>Column 3</div>
+</div>
+
+<!-- Unequal columns -->
+<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px;">
+  <div>Narrow sidebar</div>
+  <div>Wide main content</div>
+</div>
 ```
 
-### Fragments (Progressive Reveal)
+Why inline styles for grids? Each slide's layout needs vary - column ratios, gaps, etc. Inline styles give you full control per-slide without creating dozens of utility classes.
 
-```html
-<p class="fragment">Appears on click</p>
-<p class="fragment fade-up">Slides up</p>
-<p class="fragment highlight-red">Turns red</p>
+**Important HTML patterns:**
+- Every `<section>` should have a unique `id` attribute for stable identification
+- Use `class="section-divider"` for centered section title slides
+- Wrap main content in `<div class="content">` for consistent spacing. This is a flexbox container that fills the remaining vertical space below the title, ensuring content flows properly.
+- Use `<div class="footnote">` for attribution or source text at bottom
+
+### Step 5: Check for Content Overflow
+
+Run the overflow checker to ensure no slides have content that extends beyond boundaries:
+
+```bash
+node scripts/check-overflow.js presentation.html
 ```
 
-### Speaker Notes
+The script checks each slide for:
+- **Vertical overflow**: Content taller than slide height
+- **Horizontal overflow**: Content wider than slide width
 
-```html
-<section>
-  <h2>Slide</h2>
-  <p>Visible content</p>
-  <aside class="notes">
-    Private notes - press S to open speaker view
-  </aside>
-</section>
-```
+If overflow is detected, reduce content or adjust font sizes on affected slides.
 
-### Backgrounds
+### Step 6: Visual Review with Screenshots
 
-```html
-<section data-background-color="#283b95">
-<section data-background-image="image.jpg" data-background-opacity="0.5">
-<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-```
+**CRITICAL: You MUST review screenshots of EVERY SINGLE SLIDE.** Do not skip slides or review only a sample. Visual issues are common and can only be caught by examining each slide individually.
 
-### Transitions
-
-```html
-<section data-transition="zoom">  <!-- none, fade, slide, convex, concave, zoom -->
-```
-
-## Capturing Slide Screenshots with Decktape
-
-Use decktape to capture screenshots of slides for review. This project includes a fork with optimized `--slides` support that uses slide IDs in filenames.
-
-### Initial Capture (All Slides)
-
-When a presentation is first created, capture all slides with a timestamped directory:
+Capture screenshots of all slides:
 
 ```bash
 cd <presentation-directory>
 npx decktape reveal presentation.html output.pdf \
   --screenshots \
-  --screenshots-directory "screenshots_$(date +%Y%m%d_%H%M%S)"
+  --screenshots-directory "screenshots/$(date +%Y%m%d_%H%M%S)"
 ```
 
-This creates screenshots named by slide ID (e.g., `output_title_1280x720.png`, `output_key-concepts_1280x720.png`).
+This creates a timestamped folder (e.g., `screenshots/20241210_143052/`) so you can track versions and compare before/after fixes.
 
-### Targeted Capture (Specific Slides)
+Then use the Read tool to examine each screenshot image file.
 
-After reviewing screenshots and identifying slides that need edits, capture only those slides:
+#### What to Look For
 
+The overflow script catches most layout issues, but these problems require visual inspection:
+
+1. **Color inheritance in containers**: Text inside boxes or callouts may inherit the wrong color from parent elements. If you have light text on a dark page background, text inside a light-colored `.box` or `.callout` will be unreadable unless you explicitly set dark text color for that container.
+
+   **Fix pattern** - explicitly set text and bullet colors for light containers:
+   ```css
+   .box-light p,
+   .box-light li {
+     color: var(--text-dark);
+   }
+
+   .box-light ul li::before {
+     background: var(--primary-color);  /* bullet color */
+   }
+   ```
+
+2. **Custom bullet/list styling**: If you override default list styles, bullets may not contrast well on all container backgrounds.
+
+3. **Icons not rendering**: If Font Awesome fails to load, you'll see empty squares or nothing where icons should be.
+
+4. **Overflow edge cases**: The script catches most overflow, but complex nested layouts occasionally slip through.
+
+5. **Unexpected text wrap**: Text that you expected to fit on one line actually overflows to two lines. This is especially common in column layouts, where the header of one column may wrap while the rest don't, making things uneven.
+
+**Re-capture specific slides after fixes:**
 ```bash
-# Capture only slides 2, 5, and 7-9
 npx decktape reveal presentation.html output.pdf \
   --screenshots \
-  --screenshots-directory "screenshots_$(date +%Y%m%d_%H%M%S)" \
+  --screenshots-directory "screenshots/$(date +%Y%m%d_%H%M%S)" \
   --slides 2,5,7-9
 ```
 
-The `--slides` argument accepts:
-- Individual slides: `1,3,5`
-- Ranges: `1-5`
-- Combined: `1-3,5,8-10`
+Then re-examine the updated screenshots to verify fixes. The new timestamped folder makes it easy to compare with the previous version.
 
-### Workflow
+## CSS Components Reference
 
-1. **Create presentation** → Generate HTML with unique IDs on each `<section>`
-2. **Capture all slides** → Run decktape without `--slides`
-3. **Review screenshots** → Identify slides needing changes (filenames include slide IDs)
-4. **Edit slides** → Make changes to HTML
-5. **Re-capture specific slides** → Run decktape with `--slides` for only the edited slides
-6. **Repeat** steps 3-5 until satisfied
+### Boxes
+```css
+.box {
+  background: var(--box-bg);
+  border: 1px solid var(--box-border);
+  border-radius: 8px;
+  padding: 20px;
+}
 
-The timestamped directories help track iterations, and slide IDs in filenames make it easy to identify which slide needs work even if slide order changes.
+.box-outlined {
+  border: 1px solid var(--box-border);
+  border-radius: 8px;
+  padding: 20px;
+  background: transparent;
+}
+```
 
-## References
+### Callouts
+```css
+.callout {
+  border-left: 6px solid var(--primary-color);
+  padding: 15px 20px;
+  margin: 15px 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
 
-- [references/styles.css](references/styles.css) - Professional theme with columns, boxes, callouts
-- [references/theme-usage.md](references/theme-usage.md) - How to use the pre-built theme components
-- [references/revealjs-features.md](references/revealjs-features.md) - Advanced features (auto-animate, code highlighting, etc.)
+/* Color variants */
+.callout-blue { border-left-color: #2196F3; background: #e3f2fd; }
+.callout-orange { border-left-color: #ff9800; background: #fff3e0; }
+.callout-green { border-left-color: #4caf50; background: #e8f5e9; }
+.callout-gray { border-left-color: #666; background: #f5f5f5; }
+```
+
+### Blockquotes
+```css
+.reveal blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  background: none;
+  box-shadow: none;
+  width: 100%;
+}
+
+.reveal blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: var(--muted-color);
+}
+```
+
+### Icons (Font Awesome)
+
+Font Awesome is included in the scaffold. Usage:
+```html
+<i class="fa-solid fa-lightbulb"></i>
+<i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-gears"></i>
+```
+
+## Advanced Features
+
+For fragments (progressive reveal), speaker notes, custom backgrounds, auto-animate, and transitions, see [references/advanced-features.md](references/advanced-features.md).
+
+## Reveal.js Configuration
+
+```javascript
+Reveal.initialize({
+  controls: true,          // Show navigation arrows
+  progress: true,          // Show progress bar
+  slideNumber: true,       // Show slide numbers
+  hash: true,              // Update URL hash for each slide
+  transition: 'slide',     // none/fade/slide/convex/concave/zoom
+  center: false,           // Vertical centering of slide content
+  autoSlide: 0,            // Auto-advance (ms), 0 to disable
+  loop: false,             // Loop presentation
+});
+```
+
+**Note on `center`:** Default is `false` (content aligns to top), which works best for content-heavy slides. Set to `true` for minimal/creative presentations where you want content vertically centered.
+
+## Built-in Reveal.js Classes
+
+Use these directly without custom CSS:
+
+- `r-fit-text` - Auto-size text to fill slide
+- `r-stretch` - Stretch element to fill remaining vertical space
+- `r-stack` - Layer elements on top of each other
+
+```html
+<h1 class="r-fit-text">BIG TEXT</h1>
+<img class="r-stretch" src="image.jpg">
+```
+
+## Adding Charts
+
+**IMPORTANT: Before adding ANY chart, you MUST read [references/charts.md](references/charts.md).** Charts require specific flexbox/grid patterns to size correctly and avoid overflow. Do not attempt to add charts without reading the full documentation first.
+
+The scaffold includes the Chart.js plugin for adding bar, line, pie, doughnut, and scatter charts to slides.
+
+**Required pattern** - charts need flexbox containers and `maintainAspectRatio: false`:
+
+```html
+<section style="display: flex; flex-direction: column; height: 100%;">
+  <h2>Chart Title</h2>
+  <div style="flex: 1; position: relative; min-height: 0;">
+    <canvas data-chart="bar">
+    <!--
+    {
+      "data": {
+        "labels": ["Q1", "Q2", "Q3", "Q4"],
+        "datasets": [{ "label": "Revenue", "data": [12, 19, 8, 15] }]
+      },
+      "options": {
+        "maintainAspectRatio": false
+      }
+    }
+    -->
+    </canvas>
+  </div>
+</section>
+```
+
+**[references/charts.md](references/charts.md) covers (required reading):**
+- Layout patterns: full slide, half (horizontal/vertical), quarter, unequal splits (1fr 2fr, 1fr 3fr)
+- Why the flexbox pattern is required (Chart.js aspect ratio behavior)
+- All chart types (bar, line, pie, doughnut, scatter, etc.)
+- Styling and color options
+- CSV data format (simpler alternative to JSON)
+
+## Dependencies
+
+Required for the scripts, should be already installed:
+- **Node.js** (for running scripts)
+- **Puppeteer** (for overflow checking): `npm install puppeteer`
+- **Decktape** (for screenshots): `npx decktape` (runs directly)
