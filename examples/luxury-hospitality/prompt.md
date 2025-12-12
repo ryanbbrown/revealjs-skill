@@ -1,1 +1,0 @@
-Create a powerpoint presentation on market entry strategy for a luxury hospitality brand. It should be professional. Don't do any research, just come up with the content based on your pre-trained knowledge. The slides can be relatively dense. Around 10 slides is good.

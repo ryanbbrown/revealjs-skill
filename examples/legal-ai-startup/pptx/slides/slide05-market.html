@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 20pt 36pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 24pt;
+  font-weight: bold;
+  margin: 0 0 12pt 0;
+}
+.main-content {
+  display: flex;
+  gap: 20pt;
+  flex: 1;
+}
+.left-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10pt;
+}
+.market-box {
+  background: #ffffff;
+  border-radius: 6pt;
+  padding: 10pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.market-label {
+  color: #64748B;
+  font-size: 9pt;
+  margin: 0 0 4pt 0;
+}
+.market-value {
+  font-size: 22pt;
+  font-weight: bold;
+  margin: 0 0 2pt 0;
+}
+.tam { color: #1A365D; }
+.sam { color: #0D9488; }
+.som { color: #B8860B; }
+.market-desc {
+  color: #475569;
+  font-size: 8pt;
+  margin: 0;
+}
+.right-col {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+}
+.chart-placeholder {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 6pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.drivers-box {
+  background: #ffffff;
+  border-radius: 6pt;
+  padding: 10pt;
+  margin-top: 10pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.drivers-title {
+  color: #1A365D;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0 0 6pt 0;
+}
+.drivers-list {
+  margin: 0;
+  padding-left: 14pt;
+}
+.drivers-list li {
+  color: #475569;
+  font-size: 8pt;
+  margin-bottom: 3pt;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>Market Size: TAM / SAM / SOM</h1>
+  <div class="main-content">
+    <div class="left-col">
+      <div class="market-box">
+        <p class="market-label">Total Addressable Market</p>
+        <p class="market-value tam">$50B</p>
+        <p class="market-desc">Global legal tech market by 2027 | 8.5% CAGR</p>
+      </div>
+      <div class="market-box">
+        <p class="market-label">Serviceable Addressable Market</p>
+        <p class="market-value sam">$12B</p>
+        <p class="market-desc">CLM & review automation segment</p>
+      </div>
+      <div class="market-box">
+        <p class="market-label">Serviceable Obtainable Market</p>
+        <p class="market-value som">$800M</p>
+        <p class="market-desc">Enterprise AI contract review (Year 5)</p>
+      </div>
+    </div>
+    <div class="right-col">
+      <div id="chart" class="placeholder chart-placeholder" style="width: 260pt; height: 150pt;"></div>
+      <div class="drivers-box">
+        <p class="drivers-title">Key Market Drivers</p>
+        <ul class="drivers-list">
+          <li>Enterprises manage 20,000-40,000+ contracts annually</li>
+          <li>Remote work accelerating digital contract workflows</li>
+          <li>Regulatory pressure (GDPR, ESG) requires better tracking</li>
+          <li>AI maturity enables production-grade legal NLP</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 20pt 32pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 24pt;
+  font-weight: bold;
+  margin: 0 0 12pt 0;
+}
+.team-grid {
+  display: flex;
+  gap: 16pt;
+  margin-bottom: 16pt;
+}
+.team-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.avatar {
+  width: 50pt;
+  height: 50pt;
+  background: #1A365D;
+  border-radius: 50%;
+  margin: 0 auto 10pt auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar p {
+  color: #0D9488;
+  font-size: 18pt;
+  font-weight: bold;
+  margin: 0;
+}
+.team-name {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 2pt 0;
+}
+.team-role {
+  color: #0D9488;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0 0 8pt 0;
+}
+.team-bio {
+  color: #64748B;
+  font-size: 8pt;
+  margin: 0;
+  line-height: 1.4;
+}
+.bottom-row {
+  display: flex;
+  gap: 16pt;
+}
+.advisors-box {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.advisors-title {
+  color: #1A365D;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.advisor-row {
+  display: flex;
+  gap: 12pt;
+  margin-bottom: 8pt;
+}
+.advisor-name {
+  color: #1A365D;
+  font-size: 9pt;
+  font-weight: bold;
+  margin: 0;
+  flex: 0.8;
+}
+.advisor-title {
+  color: #64748B;
+  font-size: 9pt;
+  margin: 0;
+  flex: 1.2;
+}
+.investors-box {
+  flex: 1;
+  background: #1A365D;
+  border-radius: 8pt;
+  padding: 14pt;
+}
+.investors-title {
+  color: #0D9488;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.investor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8pt;
+}
+.investor-badge {
+  background: rgba(13, 148, 136, 0.2);
+  border-radius: 4pt;
+  padding: 6pt 10pt;
+}
+.investor-badge p {
+  color: #ffffff;
+  font-size: 9pt;
+  margin: 0;
+}
+.team-stats {
+  flex: 0.8;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.stats-title {
+  color: #1A365D;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6pt;
+}
+.stat-label {
+  color: #64748B;
+  font-size: 9pt;
+  margin: 0;
+}
+.stat-value {
+  color: #0D9488;
+  font-size: 9pt;
+  font-weight: bold;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>Leadership Team</h1>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="avatar"><p>SK</p></div>
+      <p class="team-name">Sarah Kim</p>
+      <p class="team-role">CEO & Co-Founder</p>
+      <p class="team-bio">Former GC at DocuSign. 15 years legal tech. Harvard Law, Stanford MBA.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar"><p>MR</p></div>
+      <p class="team-name">Michael Rodriguez</p>
+      <p class="team-role">CTO & Co-Founder</p>
+      <p class="team-bio">Ex-Google AI Research. Led NLP at Grammarly. PhD ML, MIT.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar"><p>JC</p></div>
+      <p class="team-name">Jennifer Chen</p>
+      <p class="team-role">VP Engineering</p>
+      <p class="team-bio">Former Eng Director at Salesforce. Scaled teams 10x. Berkeley CS.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar"><p>DT</p></div>
+      <p class="team-name">David Thompson</p>
+      <p class="team-role">VP Sales</p>
+      <p class="team-bio">Ex-Kira Systems VP. $50M+ enterprise sales. Built team from 0-30.</p>
+    </div>
+    <div class="team-card">
+      <div class="avatar"><p>AP</p></div>
+      <p class="team-name">Amanda Patel</p>
+      <p class="team-role">VP Product</p>
+      <p class="team-bio">Former PM Lead at Ironclad. Built CLM products used by F500.</p>
+    </div>
+  </div>
+  <div class="bottom-row">
+    <div class="advisors-box">
+      <p class="advisors-title">Advisory Board</p>
+      <div class="advisor-row">
+        <p class="advisor-name">Richard Susskind</p>
+        <p class="advisor-title">Legal futurist, author</p>
+      </div>
+      <div class="advisor-row">
+        <p class="advisor-name">Mary O'Carroll</p>
+        <p class="advisor-title">Fmr. Google Legal Ops Director</p>
+      </div>
+      <div class="advisor-row">
+        <p class="advisor-name">Jason Boehmig</p>
+        <p class="advisor-title">Co-founder, Ironclad</p>
+      </div>
+    </div>
+    <div class="investors-box">
+      <p class="investors-title">Backed By</p>
+      <div class="investor-logos">
+        <div class="investor-badge"><p>Andreessen Horowitz</p></div>
+        <div class="investor-badge"><p>Bessemer Venture</p></div>
+        <div class="investor-badge"><p>Index Ventures</p></div>
+        <div class="investor-badge"><p>Insight Partners</p></div>
+      </div>
+    </div>
+    <div class="team-stats">
+      <p class="stats-title">Team Snapshot</p>
+      <div class="stat-row">
+        <p class="stat-label">Total Employees</p>
+        <p class="stat-value">65</p>
+      </div>
+      <div class="stat-row">
+        <p class="stat-label">Engineering</p>
+        <p class="stat-value">35</p>
+      </div>
+      <div class="stat-row">
+        <p class="stat-label">Avg. Experience</p>
+        <p class="stat-value">12 years</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

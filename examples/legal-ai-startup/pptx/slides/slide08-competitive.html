@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 28pt 36pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0 0 18pt 0;
+}
+.main-content {
+  display: flex;
+  gap: 20pt;
+  flex: 1;
+}
+.left-col {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+}
+.table-container {
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  flex: 1;
+}
+.table-title {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 12pt 0;
+}
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.comp-table th {
+  background: #F1F5F9;
+  color: #475569;
+  font-size: 9pt;
+  font-weight: bold;
+  padding: 8pt 6pt;
+  text-align: left;
+  border-bottom: 1pt solid #E2E8F0;
+}
+.comp-table td {
+  color: #475569;
+  font-size: 9pt;
+  padding: 7pt 6pt;
+  border-bottom: 1pt solid #F1F5F9;
+}
+.comp-table tr.highlight td {
+  background: #F0FDFA;
+  color: #0D9488;
+  font-weight: bold;
+}
+.check { color: #0D9488; }
+.partial { color: #B8860B; }
+.no { color: #DC2626; }
+.right-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12pt;
+}
+.moat-box {
+  background: #1A365D;
+  border-radius: 8pt;
+  padding: 14pt;
+}
+.moat-title {
+  color: #0D9488;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.moat-list {
+  margin: 0;
+  padding-left: 16pt;
+}
+.moat-list li {
+  color: #ffffff;
+  font-size: 10pt;
+  margin-bottom: 6pt;
+}
+.why-box {
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  flex: 1;
+}
+.why-title {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.why-list {
+  margin: 0;
+  padding-left: 16pt;
+}
+.why-list li {
+  color: #475569;
+  font-size: 10pt;
+  margin-bottom: 6pt;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>Competitive Landscape</h1>
+  <div class="main-content">
+    <div class="left-col">
+      <div class="table-container">
+        <p class="table-title">Feature Comparison</p>
+        <table class="comp-table">
+          <tr>
+            <th>Capability</th>
+            <th>LexiContract</th>
+            <th>Kira Systems</th>
+            <th>Luminance</th>
+            <th>Generic AI</th>
+          </tr>
+          <tr class="highlight">
+            <td>Legal-Specific AI</td>
+            <td class="check">●●●</td>
+            <td class="check">●●○</td>
+            <td class="check">●●○</td>
+            <td class="no">●○○</td>
+          </tr>
+          <tr>
+            <td>98%+ Accuracy</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="partial">~</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Custom Playbooks</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Real-time Processing</td>
+            <td class="check">✓</td>
+            <td class="no">✗</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>CLM Integrations</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="partial">~</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Risk Intelligence</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Self-Service Setup</td>
+            <td class="check">✓</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Price Point</td>
+            <td class="check">$$</td>
+            <td class="no">$$$$</td>
+            <td class="no">$$$</td>
+            <td class="check">$</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="right-col">
+      <div class="moat-box">
+        <p class="moat-title">Our Competitive Moat</p>
+        <ul class="moat-list">
+          <li><b>Proprietary training data:</b> 10M+ annotated contracts</li>
+          <li><b>Legal-native architecture:</b> Built by lawyers & ML engineers</li>
+          <li><b>Network effects:</b> Model improves with each customer</li>
+          <li><b>Enterprise relationships:</b> Multi-year contracts</li>
+        </ul>
+      </div>
+      <div class="why-box">
+        <p class="why-title">Why We Win</p>
+        <ul class="why-list">
+          <li>3x faster implementation than legacy players</li>
+          <li>50% lower total cost of ownership</li>
+          <li>Only solution with real-time playbook enforcement</li>
+          <li>Modern API-first architecture vs. legacy systems</li>
+          <li>Superior accuracy on complex multi-party agreements</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

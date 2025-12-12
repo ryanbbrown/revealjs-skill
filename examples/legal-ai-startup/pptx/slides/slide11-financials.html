@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 28pt 36pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0 0 18pt 0;
+}
+.main-content {
+  display: flex;
+  gap: 20pt;
+  flex: 1;
+}
+.left-col {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  gap: 14pt;
+}
+.ask-box {
+  background: #1A365D;
+  border-radius: 8pt;
+  padding: 18pt;
+  text-align: center;
+}
+.ask-label {
+  color: #94A3B8;
+  font-size: 11pt;
+  margin: 0 0 6pt 0;
+}
+.ask-amount {
+  color: #0D9488;
+  font-size: 36pt;
+  font-weight: bold;
+  margin: 0 0 4pt 0;
+}
+.ask-round {
+  color: #ffffff;
+  font-size: 12pt;
+  margin: 0;
+}
+.use-box {
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  flex: 1;
+}
+.use-title {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 12pt 0;
+}
+.use-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10pt;
+}
+.use-bar-container {
+  flex: 1;
+  height: 18pt;
+  background: #F1F5F9;
+  border-radius: 4pt;
+  margin-right: 10pt;
+  overflow: hidden;
+}
+.use-bar {
+  height: 100%;
+  background: #0D9488;
+  border-radius: 4pt;
+  display: flex;
+  align-items: center;
+  padding-left: 8pt;
+}
+.use-bar p {
+  color: #ffffff;
+  font-size: 8pt;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+}
+.use-pct {
+  color: #1A365D;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0;
+  width: 30pt;
+  text-align: right;
+}
+.right-col {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 14pt;
+}
+.milestones-box {
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.milestones-title {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.milestone-list {
+  margin: 0;
+  padding-left: 16pt;
+}
+.milestone-list li {
+  color: #475569;
+  font-size: 10pt;
+  margin-bottom: 6pt;
+}
+.projections-box {
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  flex: 1;
+}
+.projections-title {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.proj-grid {
+  display: flex;
+  gap: 10pt;
+}
+.proj-year {
+  flex: 1;
+  text-align: center;
+  padding: 8pt;
+  background: #F8FAFC;
+  border-radius: 4pt;
+}
+.proj-year-label {
+  color: #64748B;
+  font-size: 9pt;
+  margin: 0 0 4pt 0;
+}
+.proj-arr {
+  color: #0D9488;
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0 0 2pt 0;
+}
+.proj-customers {
+  color: #475569;
+  font-size: 8pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>The Ask & Use of Funds</h1>
+  <div class="main-content">
+    <div class="left-col">
+      <div class="ask-box">
+        <p class="ask-label">Series A Raise</p>
+        <p class="ask-amount">$25M</p>
+        <p class="ask-round">24-month runway to Series B</p>
+      </div>
+      <div class="use-box">
+        <p class="use-title">Use of Funds</p>
+        <div class="use-row">
+          <div class="use-bar-container">
+            <div class="use-bar" style="width: 45%;"><p>R&D / Engineering</p></div>
+          </div>
+          <p class="use-pct">45%</p>
+        </div>
+        <div class="use-row">
+          <div class="use-bar-container">
+            <div class="use-bar" style="width: 30%;"><p>Sales & Marketing</p></div>
+          </div>
+          <p class="use-pct">30%</p>
+        </div>
+        <div class="use-row">
+          <div class="use-bar-container">
+            <div class="use-bar" style="width: 15%;"><p>G&A / Operations</p></div>
+          </div>
+          <p class="use-pct">15%</p>
+        </div>
+        <div class="use-row">
+          <div class="use-bar-container">
+            <div class="use-bar" style="width: 10%;"><p>Int'l Expansion</p></div>
+          </div>
+          <p class="use-pct">10%</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-col">
+      <div class="milestones-box">
+        <p class="milestones-title">Key Milestones This Round</p>
+        <ul class="milestone-list">
+          <li>Scale to $15M ARR and 100+ enterprise customers</li>
+          <li>Expand engineering team from 35 to 60</li>
+          <li>Launch EU data residency and GDPR-compliant deployment</li>
+          <li>Release next-gen AI model with 99%+ accuracy</li>
+          <li>Establish strategic partnerships with 3 major CLM vendors</li>
+          <li>Achieve profitability path with positive unit economics</li>
+        </ul>
+      </div>
+      <div class="projections-box">
+        <p class="projections-title">Financial Projections</p>
+        <div class="proj-grid">
+          <div class="proj-year">
+            <p class="proj-year-label">2024 (Current)</p>
+            <p class="proj-arr">$4.2M</p>
+            <p class="proj-customers">42 customers</p>
+          </div>
+          <div class="proj-year">
+            <p class="proj-year-label">2025</p>
+            <p class="proj-arr">$12M</p>
+            <p class="proj-customers">90 customers</p>
+          </div>
+          <div class="proj-year">
+            <p class="proj-year-label">2026</p>
+            <p class="proj-arr">$28M</p>
+            <p class="proj-customers">180 customers</p>
+          </div>
+          <div class="proj-year">
+            <p class="proj-year-label">2027</p>
+            <p class="proj-arr">$55M</p>
+            <p class="proj-customers">350 customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

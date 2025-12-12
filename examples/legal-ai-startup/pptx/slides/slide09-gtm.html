@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 28pt 36pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0 0 18pt 0;
+}
+.strategy-grid {
+  display: flex;
+  gap: 16pt;
+  margin-bottom: 16pt;
+}
+.strategy-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.strategy-num {
+  background: #0D9488;
+  color: #ffffff;
+  font-size: 10pt;
+  font-weight: bold;
+  width: 20pt;
+  height: 20pt;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8pt;
+}
+.strategy-num p {
+  margin: 0;
+  line-height: 1;
+}
+.strategy-title {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 6pt 0;
+}
+.strategy-desc {
+  color: #475569;
+  font-size: 9pt;
+  margin: 0;
+  line-height: 1.4;
+}
+.channels-row {
+  display: flex;
+  gap: 16pt;
+}
+.channel-box {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.channel-title {
+  color: #1A365D;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.channel-list {
+  margin: 0;
+  padding-left: 14pt;
+}
+.channel-list li {
+  color: #475569;
+  font-size: 9pt;
+  margin-bottom: 5pt;
+}
+.expansion-box {
+  background: #1A365D;
+  border-radius: 8pt;
+  padding: 14pt;
+}
+.expansion-title {
+  color: #0D9488;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.expansion-timeline {
+  display: flex;
+  gap: 16pt;
+}
+.timeline-item {
+  flex: 1;
+  text-align: center;
+}
+.timeline-year {
+  color: #0D9488;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 4pt 0;
+}
+.timeline-focus {
+  color: #ffffff;
+  font-size: 9pt;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>Go-to-Market Strategy</h1>
+  <div class="strategy-grid">
+    <div class="strategy-card">
+      <div class="strategy-num"><p>1</p></div>
+      <p class="strategy-title">Land with Legal Ops</p>
+      <p class="strategy-desc">Target VP Legal Operations at F1000 companies with contract volume pain points. Free pilot with 100 contracts to prove ROI.</p>
+    </div>
+    <div class="strategy-card">
+      <div class="strategy-num"><p>2</p></div>
+      <p class="strategy-title">Expand via CLM</p>
+      <p class="strategy-desc">Integrate deeply with existing CLM investments (Ironclad, Agiloft, Icertis) to become embedded in workflows.</p>
+    </div>
+    <div class="strategy-card">
+      <div class="strategy-num"><p>3</p></div>
+      <p class="strategy-title">Partner Channel</p>
+      <p class="strategy-desc">Strategic partnerships with Big 4 consulting and Am Law 100 firms who recommend and implement our solution.</p>
+    </div>
+    <div class="strategy-card">
+      <div class="strategy-num"><p>4</p></div>
+      <p class="strategy-title">Product-Led Growth</p>
+      <p class="strategy-desc">Self-service tier for mid-market. Legal teams can start free, upgrade when they hit volume limits.</p>
+    </div>
+  </div>
+  <div class="channels-row">
+    <div class="channel-box">
+      <p class="channel-title">Sales Motion</p>
+      <ul class="channel-list">
+        <li><b>Enterprise:</b> Direct sales, 6-8 week cycle</li>
+        <li><b>Mid-Market:</b> Inside sales + self-serve</li>
+        <li><b>Law Firms:</b> Partner-led with revenue share</li>
+        <li><b>Target ACV:</b> $100K-$500K enterprise</li>
+      </ul>
+    </div>
+    <div class="channel-box">
+      <p class="channel-title">Marketing Channels</p>
+      <ul class="channel-list">
+        <li>Legal tech conferences (ILTACON, Legaltech)</li>
+        <li>Content marketing + thought leadership</li>
+        <li>CLO/GC peer network referrals</li>
+        <li>Analyst relations (Gartner, Forrester)</li>
+      </ul>
+    </div>
+    <div class="expansion-box">
+      <p class="expansion-title">Geographic Expansion</p>
+      <div class="expansion-timeline">
+        <div class="timeline-item">
+          <p class="timeline-year">2024</p>
+          <p class="timeline-focus">US Enterprise<br/>Focus</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">2025</p>
+          <p class="timeline-focus">UK & DACH<br/>Expansion</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">2026</p>
+          <p class="timeline-focus">APAC Entry<br/>(Singapore, AU)</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-year">2027</p>
+          <p class="timeline-focus">Global<br/>Coverage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

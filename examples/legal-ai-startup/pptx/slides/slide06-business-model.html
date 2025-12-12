@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 28pt 36pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0 0 20pt 0;
+}
+.pricing-grid {
+  display: flex;
+  gap: 16pt;
+  margin-bottom: 20pt;
+}
+.pricing-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 16pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.pricing-card.featured {
+  border: 2pt solid #0D9488;
+  background: #F0FDFA;
+}
+.tier-name {
+  color: #64748B;
+  font-size: 11pt;
+  font-weight: bold;
+  margin: 0 0 8pt 0;
+  text-transform: uppercase;
+}
+.tier-price {
+  color: #1A365D;
+  font-size: 24pt;
+  font-weight: bold;
+  margin: 0 0 4pt 0;
+}
+.tier-period {
+  color: #94A3B8;
+  font-size: 10pt;
+  margin: 0 0 12pt 0;
+}
+.tier-features {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tier-features li {
+  color: #475569;
+  font-size: 9pt;
+  margin-bottom: 6pt;
+  text-align: left;
+  padding-left: 12pt;
+}
+.economics-row {
+  display: flex;
+  gap: 16pt;
+}
+.economics-box {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 14pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.economics-title {
+  color: #1A365D;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6pt;
+}
+.metric-label {
+  color: #64748B;
+  font-size: 10pt;
+  margin: 0;
+}
+.metric-value {
+  color: #0D9488;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>Business Model & Pricing</h1>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <p class="tier-name">Professional</p>
+      <p class="tier-price">$2,500</p>
+      <p class="tier-period">per month</p>
+      <ul class="tier-features">
+        <li>Up to 500 contracts/month</li>
+        <li>Standard abstraction templates</li>
+        <li>Risk flagging & alerts</li>
+        <li>Email support</li>
+        <li>API access (limited)</li>
+      </ul>
+    </div>
+    <div class="pricing-card featured">
+      <p class="tier-name">Enterprise</p>
+      <p class="tier-price">$8,000</p>
+      <p class="tier-period">per month</p>
+      <ul class="tier-features">
+        <li>Up to 2,500 contracts/month</li>
+        <li>Custom playbook configuration</li>
+        <li>Advanced risk intelligence</li>
+        <li>CLM integrations included</li>
+        <li>Dedicated success manager</li>
+      </ul>
+    </div>
+    <div class="pricing-card">
+      <p class="tier-name">Enterprise Plus</p>
+      <p class="tier-price">$25,000+</p>
+      <p class="tier-period">per month</p>
+      <ul class="tier-features">
+        <li>Unlimited contracts</li>
+        <li>Custom AI model training</li>
+        <li>On-premise deployment option</li>
+        <li>White-glove implementation</li>
+        <li>SLA with 99.9% uptime</li>
+      </ul>
+    </div>
+  </div>
+  <div class="economics-row">
+    <div class="economics-box">
+      <p class="economics-title">Revenue Streams</p>
+      <div class="metric-row">
+        <p class="metric-label">SaaS Subscriptions</p>
+        <p class="metric-value">75%</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">Implementation Services</p>
+        <p class="metric-value">15%</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">Usage-Based Overages</p>
+        <p class="metric-value">10%</p>
+      </div>
+    </div>
+    <div class="economics-box">
+      <p class="economics-title">Unit Economics</p>
+      <div class="metric-row">
+        <p class="metric-label">Average Contract Value</p>
+        <p class="metric-value">$120K ARR</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">Gross Margin</p>
+        <p class="metric-value">82%</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">Net Revenue Retention</p>
+        <p class="metric-value">135%</p>
+      </div>
+    </div>
+    <div class="economics-box">
+      <p class="economics-title">Customer ROI</p>
+      <div class="metric-row">
+        <p class="metric-label">Avg. Annual Savings</p>
+        <p class="metric-value">$800K</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">Payback Period</p>
+        <p class="metric-value">45 days</p>
+      </div>
+      <div class="metric-row">
+        <p class="metric-label">Time-to-Value</p>
+        <p class="metric-value">2 weeks</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

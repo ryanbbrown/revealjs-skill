@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 18pt 32pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 24pt;
+  font-weight: bold;
+  margin: 0 0 12pt 0;
+}
+.metrics-row {
+  display: flex;
+  gap: 10pt;
+  margin-bottom: 12pt;
+}
+.metric-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 6pt;
+  padding: 10pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.metric-value {
+  color: #0D9488;
+  font-size: 20pt;
+  font-weight: bold;
+  margin: 0 0 2pt 0;
+}
+.metric-label {
+  color: #64748B;
+  font-size: 8pt;
+  margin: 0;
+}
+.main-content {
+  display: flex;
+  gap: 14pt;
+  flex: 1;
+}
+.chart-col {
+  flex: 1.3;
+}
+.chart-area {
+  background: #ffffff;
+  border-radius: 6pt;
+  height: 100%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.logos-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8pt;
+}
+.logos-box {
+  background: #ffffff;
+  border-radius: 6pt;
+  padding: 10pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.logos-title {
+  color: #1A365D;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0 0 8pt 0;
+}
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6pt;
+}
+.logo-placeholder {
+  background: #F1F5F9;
+  border-radius: 3pt;
+  padding: 5pt 8pt;
+  text-align: center;
+}
+.logo-placeholder p {
+  color: #64748B;
+  font-size: 7pt;
+  font-weight: bold;
+  margin: 0;
+}
+.milestone-box {
+  background: #1A365D;
+  border-radius: 6pt;
+  padding: 10pt;
+}
+.milestone-title {
+  color: #0D9488;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0 0 6pt 0;
+}
+.milestone-list {
+  margin: 0;
+  padding-left: 12pt;
+}
+.milestone-list li {
+  color: #ffffff;
+  font-size: 8pt;
+  margin-bottom: 3pt;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>Traction & Key Metrics</h1>
+  <div class="metrics-row">
+    <div class="metric-card">
+      <p class="metric-value">$4.2M</p>
+      <p class="metric-label">ARR (Dec 2024)</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-value">185%</p>
+      <p class="metric-label">YoY Growth</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-value">42</p>
+      <p class="metric-label">Enterprise Customers</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-value">1.2M</p>
+      <p class="metric-label">Contracts Processed</p>
+    </div>
+    <div class="metric-card">
+      <p class="metric-value">97%</p>
+      <p class="metric-label">Customer Retention</p>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="chart-col">
+      <div id="chart" class="placeholder chart-area" style="width: 260pt; height: 140pt;"></div>
+    </div>
+    <div class="logos-col">
+      <div class="logos-box">
+        <p class="logos-title">Notable Customers</p>
+        <div class="logo-grid">
+          <div class="logo-placeholder"><p>Fortune 100 Bank</p></div>
+          <div class="logo-placeholder"><p>Top 10 Pharma</p></div>
+          <div class="logo-placeholder"><p>Big 4 Consulting</p></div>
+          <div class="logo-placeholder"><p>Global Insurer</p></div>
+          <div class="logo-placeholder"><p>Tech Unicorn</p></div>
+          <div class="logo-placeholder"><p>Am Law 50 Firm</p></div>
+        </div>
+      </div>
+      <div class="milestone-box">
+        <p class="milestone-title">Recent Milestones</p>
+        <ul class="milestone-list">
+          <li>SOC 2 Type II certified (Q3 2024)</li>
+          <li>Launched Salesforce integration</li>
+          <li>Expanded to UK/EU market</li>
+          <li>Released custom AI training module</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

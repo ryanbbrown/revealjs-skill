@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #F8FAFC;
+}
+.accent-bar {
+  width: 6pt; height: 100%;
+  background: #0D9488;
+}
+.content {
+  flex: 1;
+  padding: 24pt 36pt;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #1A365D;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0 0 16pt 0;
+}
+.stats-row {
+  display: flex;
+  gap: 20pt;
+  margin-bottom: 24pt;
+}
+.stat-box {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 16pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.stat-number {
+  color: #0D9488;
+  font-size: 28pt;
+  font-weight: bold;
+  margin: 0 0 4pt 0;
+}
+.stat-label {
+  color: #64748B;
+  font-size: 11pt;
+  margin: 0;
+}
+.pain-points {
+  background: #ffffff;
+  border-radius: 8pt;
+  padding: 16pt 20pt;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+}
+.pain-title {
+  color: #1A365D;
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0 0 12pt 0;
+}
+.pain-list {
+  margin: 0;
+  padding-left: 20pt;
+}
+.pain-list li {
+  color: #475569;
+  font-size: 12pt;
+  margin-bottom: 8pt;
+}
+.cost-highlight {
+  background: #FEF3C7;
+  border-left: 4pt solid #B8860B;
+  padding: 12pt 16pt;
+  margin-top: 16pt;
+}
+.cost-highlight p {
+  color: #92400E;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="content">
+  <h1>The Problem: Contract Review is Broken</h1>
+  <div class="stats-row">
+    <div class="stat-box">
+      <p class="stat-number">80%</p>
+      <p class="stat-label">Of legal work is routine<br/>contract review</p>
+    </div>
+    <div class="stat-box">
+      <p class="stat-number">$400/hr</p>
+      <p class="stat-label">Average attorney<br/>billing rate</p>
+    </div>
+    <div class="stat-box">
+      <p class="stat-number">4-6 hrs</p>
+      <p class="stat-label">Time to review a<br/>single contract</p>
+    </div>
+    <div class="stat-box">
+      <p class="stat-number">15%</p>
+      <p class="stat-label">Error rate in manual<br/>review processes</p>
+    </div>
+  </div>
+  <div class="pain-points">
+    <p class="pain-title">Enterprise Pain Points</p>
+    <ul class="pain-list">
+      <li>Legal teams are overwhelmed with contract backlogs, slowing deal velocity</li>
+      <li>Manual abstraction is inconsistent and error-prone across reviewers</li>
+      <li>Critical clause deviations and risks are frequently missed under time pressure</li>
+      <li>No standardized way to extract and compare key terms across contract portfolio</li>
+    </ul>
+  </div>
+  <div class="cost-highlight">
+    <p>Fortune 500 companies spend $50-100M annually on contract review alone</p>
+  </div>
+</div>
+</body>
+</html>

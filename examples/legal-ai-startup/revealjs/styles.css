@@ -1,0 +1,488 @@
+/* LexiContract AI - Legal AI Startup Pitch Deck
+ *
+ * Color Palette: Professional Navy + Gold
+ * - Deep navy conveys trust and professionalism (legal industry)
+ * - Gold accent suggests premium value and success
+ * - Clean whites for contrast and readability
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===========================================
+   CSS VARIABLES
+   =========================================== */
+:root {
+  /* Backgrounds */
+  --background-color: #ffffff;
+  --section-divider-bg: #1C2833;            /* Navy for section dividers */
+
+  /* Typography */
+  --heading-font: "Playfair Display", Georgia, serif;
+  --body-font: "Inter", Helvetica, sans-serif;
+  --base-font-size: 32px;
+  --text-size: 16pt;
+  --h1-size: 48pt;
+  --h2-size: 32pt;
+  --h3-size: 22pt;
+  --footnote-size: 11pt;
+
+  /* Colors */
+  --primary-color: #1C2833;     /* Deep navy */
+  --secondary-color: #C9A227;   /* Gold */
+  --accent-color: #2E4053;      /* Slate blue */
+  --text-color: #1A1A1A;
+  --text-light: #F8F9FA;
+  --muted-color: #5D6D7E;
+  --line-color: #C9A227;
+
+  /* Layout */
+  --slide-padding: 60px;
+  --slide-padding-top: 40px;
+  --content-gap: 25px;
+
+  /* Boxes & Borders */
+  --box-radius: 6px;
+  --box-bg: #F8F9FA;
+  --box-border: #D5D8DC;
+  --accent-border-width: 5px;
+
+  /* Dark boxes for contrast */
+  --dark-box-bg: #1C2833;
+  --dark-box-text: #F8F9FA;
+
+  /* Callout colors */
+  --blue: #2E86AB;
+  --blue-bg: #EBF5FB;
+  --blue-border: #85C1E9;
+
+  --gold: #C9A227;
+  --gold-bg: #FEF9E7;
+  --gold-border: #F7DC6F;
+
+  --green: #27AE60;
+  --green-bg: #E8F8F5;
+  --green-border: #82E0AA;
+
+  --gray: #5D6D7E;
+  --gray-bg: #F4F6F6;
+  --gray-border: #AAB7B8;
+}
+
+/* ===========================================
+   BASE STYLES
+   =========================================== */
+
+.reveal-viewport {
+  background-color: var(--background-color);
+}
+
+.reveal {
+  font-family: var(--body-font);
+  font-size: var(--base-font-size);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: var(--heading-font);
+  text-transform: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.reveal h1 { font-size: var(--h1-size); }
+.reveal h2 { font-size: var(--h2-size); margin-bottom: 0; }
+.reveal h3 { font-size: var(--h3-size); }
+
+.reveal p,
+.reveal li,
+.reveal .callout,
+.reveal blockquote {
+  font-size: var(--text-size);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.reveal .callout p,
+.reveal .callout li,
+.reveal blockquote p {
+  font-size: inherit;
+}
+
+/* ===========================================
+   SLIDE LAYOUT
+   =========================================== */
+
+.reveal .slides section {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: var(--slide-padding-top) var(--slide-padding) var(--slide-padding) var(--slide-padding) !important;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.reveal .slides section.stack {
+  padding: 0 !important;
+}
+
+.reveal .slides section > .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: var(--content-gap);
+  text-align: left;
+}
+
+.reveal .slides section > .footnote {
+  position: absolute;
+  bottom: 15px;
+  left: var(--slide-padding);
+  right: var(--slide-padding);
+  font-size: var(--footnote-size);
+  color: var(--muted-color);
+}
+
+/* ===========================================
+   SECTION DIVIDERS
+   =========================================== */
+
+.reveal .slides section.section-divider {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center;
+}
+
+/* Section divider background via data-state */
+.reveal-viewport.is-section-divider .slide-background.present {
+  background-color: var(--section-divider-bg) !important;
+}
+
+.reveal .slides section.section-divider h1 {
+  font-size: 52pt;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.reveal .slides section.section-divider p {
+  font-size: 20pt;
+  color: var(--secondary-color);
+}
+
+/* ===========================================
+   TEXT SIZE UTILITIES
+   =========================================== */
+
+.text-lg { font-size: 18pt !important; }
+.text-xl { font-size: 20pt !important; }
+.text-2xl { font-size: 24pt !important; }
+.text-3xl { font-size: 28pt !important; }
+.text-4xl { font-size: 32pt !important; }
+
+.text-muted { color: var(--muted-color) !important; }
+.text-center { text-align: center !important; }
+.text-uppercase { text-transform: uppercase; letter-spacing: 0.1em; }
+.text-gold { color: var(--secondary-color) !important; }
+.text-navy { color: var(--primary-color) !important; }
+.font-light { font-weight: 300; }
+.font-bold { font-weight: 600; }
+
+/* ===========================================
+   BOXES / CONTAINERS
+   =========================================== */
+
+.box {
+  background: var(--box-bg);
+  border: 1px solid var(--box-border);
+  border-radius: var(--box-radius);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.box-outlined {
+  border: 1px solid var(--box-border);
+  border-radius: var(--box-radius);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.box-dark {
+  background: var(--dark-box-bg);
+  border-radius: var(--box-radius);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.box-dark p,
+.box-dark li,
+.box-dark h3 {
+  color: var(--dark-box-text);
+}
+
+.box-gold-border {
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+/* ===========================================
+   STAT BOXES - For metrics/numbers
+   =========================================== */
+
+.stat-box {
+  background: var(--box-bg);
+  border-radius: var(--box-radius);
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-box .number {
+  font-size: 36pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-box .label {
+  font-size: 12pt;
+  color: var(--muted-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-box-accent {
+  background: var(--primary-color);
+}
+
+.stat-box-accent .number {
+  color: var(--secondary-color);
+}
+
+.stat-box-accent .label {
+  color: var(--text-light);
+}
+
+/* ===========================================
+   BLOCKQUOTES
+   =========================================== */
+
+.reveal blockquote {
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  background: none;
+  box-shadow: none;
+  width: 100%;
+  max-width: none;
+}
+
+.reveal blockquote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  color: var(--muted-color);
+}
+
+/* ===========================================
+   CALLOUTS
+   =========================================== */
+
+.callout {
+  border-left: var(--accent-border-width) solid var(--secondary-color);
+  padding: 15px 20px;
+  margin: 15px 0;
+  background: var(--gold-bg);
+  border-radius: var(--box-radius);
+}
+
+.callout-blue {
+  border-left-color: var(--blue);
+  background: var(--blue-bg);
+}
+
+.callout-green {
+  border-left-color: var(--green);
+  background: var(--green-bg);
+}
+
+.callout-gray {
+  border-left-color: var(--gray);
+  background: var(--gray-bg);
+}
+
+/* ===========================================
+   LISTS
+   =========================================== */
+
+.reveal ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 15px 0;
+}
+
+.reveal ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.reveal ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 8px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.reveal ul ul li::before {
+  background: var(--muted-color);
+  width: 6px;
+  height: 6px;
+}
+
+/* ===========================================
+   TEAM CARDS
+   =========================================== */
+
+.team-card {
+  background: var(--box-bg);
+  border-radius: var(--box-radius);
+  padding: 20px;
+  text-align: center;
+}
+
+.team-card .name {
+  font-family: var(--heading-font);
+  font-size: 18pt;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.team-card .title {
+  font-size: 12pt;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.team-card .bio {
+  font-size: 12pt;
+  color: var(--muted-color);
+  line-height: 1.4;
+}
+
+/* ===========================================
+   PRICING TABLE
+   =========================================== */
+
+.pricing-tier {
+  background: var(--box-bg);
+  border-radius: var(--box-radius);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid var(--box-border);
+}
+
+.pricing-tier.featured {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.pricing-tier.featured .tier-name,
+.pricing-tier.featured .price,
+.pricing-tier.featured li {
+  color: var(--text-light);
+}
+
+.pricing-tier.featured li::before {
+  background: var(--secondary-color);
+}
+
+.pricing-tier .tier-name {
+  font-size: 14pt;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.pricing-tier .price {
+  font-size: 28pt;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.pricing-tier .price-period {
+  font-size: 12pt;
+  color: var(--muted-color);
+}
+
+.pricing-tier.featured .price-period {
+  color: rgba(255,255,255,0.7);
+}
+
+.pricing-tier ul {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.pricing-tier li {
+  font-size: 12pt;
+  margin-bottom: 8px;
+}
+
+/* ===========================================
+   DECORATIVE ELEMENTS
+   =========================================== */
+
+/* Gold accent line at top of content slides */
+.reveal .slides section:not(.section-divider)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--secondary-color) 30%, transparent 30%);
+}
+
+/* ===========================================
+   TITLE SLIDE SPECIFIC
+   =========================================== */
+
+.reveal .slides section#title {
+  background: var(--primary-color);
+}
+
+.reveal .slides section#title h1 {
+  color: var(--text-light);
+  font-size: 56pt;
+}
+
+.reveal .slides section#title .tagline {
+  color: var(--secondary-color);
+  font-size: 24pt;
+  margin-top: 20px;
+}
+
+.reveal .slides section#title .subtitle {
+  color: rgba(255,255,255,0.8);
+  font-size: 16pt;
+  margin-top: 40px;
+}
